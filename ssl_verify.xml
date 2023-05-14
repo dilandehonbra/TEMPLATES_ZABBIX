@@ -209,7 +209,7 @@
             <macros>
                 <macro>
                     <macro>{$EXPIRED}</macro>
-                    <value>30</value>
+                    <value>30d</value>
                 </macro>
             </macros>
             <templates/>
