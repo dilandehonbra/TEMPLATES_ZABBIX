@@ -1,12 +1,12 @@
 #/usr/bin/env bash
 # Script para obter informações sobre a validade de certificados SSL/TLS de um determinado servidor web.
 # Modos de uso:
-# 1. expired_sum: calcula a soma do tempo de expiração de todos os certificados presentes na cadeia de certificação do servidor.
-#    Exemplo de uso: ./script.sh www.exemplo.com.br expired_sum
+# 1. expired_sum: informa em quanto tempo o certificado irá expirar(no template com medida em "segundos").
+#    Exemplo de uso: bash certs.sh www.exemplo.com.br expired_sum
 # 2. certgen: retorna a data de início da validade do certificado SSL/TLS do servidor.
-#    Exemplo de uso: ./script.sh www.exemplo.com.br certgen
-# 3. certexp: retorna a data de fim da validade do certificado SSL/TLS do servidor.
-#    Exemplo de uso: ./script.sh www.exemplo.com.br certexp
+#    Exemplo de uso: bash certs.sh www.exemplo.com.br certgen
+# 3. bash certs.sh: retorna a data de fim da validade do certificado SSL/TLS do servidor.
+#    Exemplo de uso: ./script.sh www.exemplo.com.br(esse é o uso comum, ou seja, sem parâmeros de manipulação informa a data de expiração do certificado em unixtime.
 
 { IFS=$'\n'
 var=$({
