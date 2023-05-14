@@ -5,8 +5,8 @@
 #    Exemplo de uso: bash certs.sh www.exemplo.com.br expired_sum
 # 2. certgen: retorna a data de início da validade do certificado SSL/TLS do servidor.
 #    Exemplo de uso: bash certs.sh www.exemplo.com.br certgen
-# 3. bash certs.sh: retorna a data de fim da validade do certificado SSL/TLS do servidor.
-#    Exemplo de uso: ./script.sh www.exemplo.com.br(esse é o uso comum, ou seja, sem parâmeros de manipulação informa a data de expiração do certificado em unixtime.
+# 3. certs.sh: retorna a data de fim da validade do certificado SSL/TLS do servidor.
+#    Exemplo de uso: bash certs.sh www.exemplo.com.br(esse é o uso comum, ou seja, sem parâmeros de manipulação informa a data de expiração do certificado em unixtime.
 
 { IFS=$'\n'
 var=$({
